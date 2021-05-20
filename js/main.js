@@ -33,7 +33,26 @@ $('.slider').slick({
       // instead of a settings object
     ]
   });
-          
+        
+  
+  $('.slider-for').slick({
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    arrows: false,
+    fade: false,
+    asNavFor: '.slider-nav',
+    dots:true,
+  });
+  $('.slider-nav').slick({
+    slidesToShow: 3,
+    slidesToScroll: 0,
+    asNavFor: '.slider-for',
+    dots: false,
+    infinite:true,
+    loop:true,
+    centerMode: true,
+    focusOnSelect: true,
+  });
 
 
   $('.sidebarbtn').click(function(){
@@ -238,7 +257,19 @@ function inc4(){
 function dec4(){
  document.getElementById('inpNum4').stepDown()
 }
+function inc5(){
+  document.getElementById('inpNum5').stepUp()
+}
+function dec5(){
+ document.getElementById('inpNum5').stepDown()
+}
 
+function inc6(){
+  document.getElementById('inpNum6').stepUp()
+}
+function dec6(){
+ document.getElementById('inpNum6').stepDown()
+}
 $('.popBtn').click(function(event){
   event.preventDefault()
   $('.popup').toggle()
@@ -252,4 +283,24 @@ $('.anotherpopup').click(function(event){
 $('.closeBnt').click(function(){
   $('.another-pp-bg').hide()
   $('.another-popup').hide()
+})
+
+$('.newClose').click(function(){
+  $('.first').hide(300)
+})
+
+$('.payment-div .btn').click(function(){
+  $('.first').show(300)
+})
+
+$('.new-popup .btn.btn-link.text-dark').click(function(){
+  $('.final').show(300)
+  $('.first').hide(300)
+})
+
+
+$('.finalClose').click(function(){
+  $('.final').hide(300)
+  $('.cart-popup').hide(200)
+  $('.sidebar-bg').hide(200)
 })

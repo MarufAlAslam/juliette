@@ -170,16 +170,16 @@
     <!-- title section -->
 
     <!-- slider section -->
-    <section class="heroSlider mt-4">
+    <section class="heroSlider mt-4 position-relative">
         <div class="container">
             <div class="row">
                 <div class="col-lg-6 position-relativec">
-                    <div class="thumbSection">
+                    <!-- <div class="thumbSection">
+                        
+                        
                         <img src="img/thumb.png" class="img-fluid" alt="">
-                        <img src="img/thumb.png" class="img-fluid" alt="">
-                        <img src="img/thumb.png" class="img-fluid" alt="">
-                    </div>
-                    <div class="slider">
+                    </div> -->
+                    <div class="slider-for">
                         <div class="slide">
                             <div class="card">
                                 <img src="img/slider-image.png" class="card-img-top img-fluid" alt="">
@@ -197,6 +197,17 @@
                                 <img src="img/slider-image.png" class="card-img-top img-fluid" alt="">
                                 
                             </div>
+                        </div>
+                    </div>
+                    <div class="slider-nav">
+                        <div class="thumb">
+                            <img src="img/thumb.png" class="img-fluid" alt="">
+                        </div>
+                        <div class="thumb">
+                            <img src="img/thumb.png" class="img-fluid" alt="">
+                        </div>
+                        <div class="thumb">
+                            <img src="img/thumb.png" class="img-fluid" alt="">
                         </div>
                     </div>
                 </div>
@@ -1132,9 +1143,17 @@
                             </div>
                         </div>
                     </div>
+                   <div class="posi-re">
                     <div class="progress">
                         <div class="progress-bar" role="progressbar" aria-valuenow="33" aria-valuemin="33" aria-valuemax="100"></div>
+                        <span class="span1">|</span>
+                        <span class="span2">|</span>
                       </div>
+                   </div>
+                   <div class="position-relative mb-4 mt-3">
+                       <span class="text1 font-weight-bold">Lorem, ipsum.</span>
+                       <span class="text2 font-weight-bold">Lorem, ipsum.</span>
+                   </div>
                     <div class="card mt-4 card-closable">
                         <div class="card-body">
                             <div class="row">
@@ -1190,6 +1209,171 @@
                     </div>
                 </div>
             </div>
+            <div class="new-popup first">
+                <div class="container">
+                    <button class="closebtn newClose">
+                        <i class="fa fa-times"></i>
+                    </button>
+                    <p class=" text-dark">
+                        Ton panier
+                    </p>
+                    <p class="px-4 mt-4">
+                        Plus que 6,00€ pour profiter de la livraison offerte !
+                    </p>
+                    <div class="card mt-5">
+                        <div class="card-body">
+                            <div class="row">
+                                <div class="col-md-2 .text-center">
+                                    <img src="img/card-img.png" class="img-fluid" alt="">
+                                </div>
+                                <div class="col-md-10">
+                                    <h6 class="font-weight-bold">Bouteille rechargable</h6>
+                                    <p class="fs-12">La bouteille 300 ml en verre renforcé</p>
+                                    <table>
+                                        <tr>
+                                            <td class="w-25">
+                                                <p class="fs-12">
+                                                    Quantité
+                                                </p>
+                                            </td>
+                                            <td class="quantd w-75">
+                                                <table>
+                                                    <tr>
+                                                        <td>
+                                                            <button class="font-weight-bold minusbtn" onclick="dec5()">-</button>
+                                                        </td>
+                                                        <td>
+                                                            <input type="number" class="inpNum form-control text-align-center font-weight-bold" min="0" name="" id="inpNum5">
+                                                        </td>
+                                                        <td>
+                                                            <button class="font-weight-bold plusbtn" onclick="inc5()">+</button>
+                                                        </td>
+                                                    </tr>
+                                                </table>
+                    
+                                            </td>
+                                            <td></td>
+                                        </tr>
+                                    </table>
+                                    <div class="text-right mt-1">
+                                        <h6 class="font-weight-bold m-0">
+                                            8,00 €
+                                        </h6>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card mt-3">
+                        <div class="card-body">
+                            <div class="row">
+                                <div class="col-md-2 .text-center">
+                                    <img src="img/card-img.png" class="img-fluid" alt="">
+                                </div>
+                                <div class="col-md-10">
+                                    <h6 class="font-weight-bold">Bouteille rechargable</h6>
+                                    <p class="fs-12">La bouteille 300 ml en verre renforcé</p>
+                                   <p class="fs-14">
+                                       <span class="fs-20">5</span>
+                                    parfums sélectionnées :
+                                   </p>
+                                   <p class="fs-12">2 x Vanille (Odyssée gourmande), 3 x Amande Douce (Océan de douceur) <a href="">Modifier</a></p>
+                                    <div class="text-right mt-1">
+                                        <h6 class="font-weight-bold m-0">
+                                            18,00 €
+                                        </h6>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="text-center">
+                        <button class="btn btn-link text-dark">Choisis ton mode d’achat :</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="new-popup final">
+                <div class="container">
+                    <button class="closebtn finalClose">
+                        <i class="fa fa-times"></i>
+                    </button>
+                    <p class=" text-dark">
+                        Ton panier
+                    </p>
+                   
+                    <div class="card mt-2">
+                        <div class="card-body">
+                            <div class="row">
+                                <div class="col-md-2 .text-center">
+                                    <img src="img/card-img.png" class="img-fluid" alt="">
+                                </div>
+                                <div class="col-md-10">
+                                    <h6 class="font-weight-bold">Bouteille rechargable</h6>
+                                    <p class="fs-12">La bouteille 300 ml en verre renforcé</p>
+                                    <table>
+                                        <tr>
+                                            <td class="w-25">
+                                                <p class="fs-12">
+                                                    Quantité
+                                                </p>
+                                            </td>
+                                            <td class="quantd w-75">
+                                                <table>
+                                                    <tr>
+                                                        <td>
+                                                            <button class="font-weight-bold minusbtn" onclick="dec6()">-</button>
+                                                        </td>
+                                                        <td>
+                                                            <input type="number" class="inpNum form-control text-align-center font-weight-bold" min="0" name="" id="inpNum6">
+                                                        </td>
+                                                        <td>
+                                                            <button class="font-weight-bold plusbtn" onclick="inc6()">+</button>
+                                                        </td>
+                                                    </tr>
+                                                </table>
+                    
+                                            </td>
+                                            <td></td>
+                                        </tr>
+                                    </table>
+                                    <div class="text-right mt-1">
+                                        <h6 class="font-weight-bold m-0">
+                                            8,00 €
+                                        </h6>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card mt-3">
+                        <div class="card-body">
+                            <div class="row">
+                                <div class="col-md-2 .text-center">
+                                    <img src="img/card-img.png" class="img-fluid" alt="">
+                                </div>
+                                <div class="col-md-10">
+                                    <h6 class="font-weight-bold">Bouteille rechargable</h6>
+                                    <p class="fs-12">La bouteille 300 ml en verre renforcé</p>
+                                   <p class="fs-14">
+                                       <span class="fs-20">5</span>
+                                    parfums sélectionnées :
+                                   </p>
+                                   <p class="fs-12">2 x Vanille (Odyssée gourmande), 3 x Amande Douce (Océan de douceur) <a href="">Modifier</a></p>
+                                    <div class="text-right mt-1">
+                                        <h6 class="font-weight-bold m-0">
+                                            18,00 €
+                                        </h6>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="text-center">
+                        <button class="btn btn-yellow w-100 text-dark mt-5">Choisis ton mode d’achat :</button>
+                    </div>
+                </div>
+            </div>
         </section>
     </div>
     <!-- sidebar -->
@@ -1197,6 +1381,7 @@
   
    <!-- jquery -->
    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+   <script src="jquery/jquery.min.js"></script>
 
     <!-- popper -->
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
